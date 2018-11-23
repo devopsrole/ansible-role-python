@@ -1,0 +1,8 @@
+---
+- include: dependencies.yml
+  become: true
+  become_user: root
+ 
+ - include: install.yml
+  become: true
+  become_user: root
