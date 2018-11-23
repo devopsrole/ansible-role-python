@@ -1,6 +1,8 @@
 Python-From-Src
 ===============
 
+OS: Redhat/CentOS 6/7
+
 Ansible role for installing a particular version of Python from
 source.
 
