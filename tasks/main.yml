@@ -9,5 +9,31 @@
   register: cmd_result
   ignore_errors: yes
 
+- name: install epel-release
+  yum:
+    name: epel-release
+    state: present
+    update_cache: yes
+
+- name: Development tools
+  yum:
+    name: '@Development Tools'
+    state: present
+
+- name: install dependencies
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - zlib-devel
+    - bzip2-devel
+    - libffi-devel
+    - openssl-devel
+    - ncurses-devel
+    - sqlite-devel
+    - wget
+    - vim
+    - mlocate
+
 - include: install.yml
   when: pyfsrc_force_install or cmd_result.rc != 0
