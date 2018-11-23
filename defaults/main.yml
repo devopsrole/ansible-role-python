@@ -19,8 +19,8 @@ pyfsrc_make_default: yes
 # whether or not to delete the downloaded source code. By setting it
 # to false and using a custom var for `pyfsrc_download_dir` a kind of
 # local caching can be achieved.
-pyfsrc_cleanup_downloads: yes
+pyfsrc_cleanup_downloads: no
 
 # If true, the python source for the version will be downloaded and
 # installed again even if it's found on the system.
-pyfsrc_force_install: no
+pyfsrc_force_install: yes
