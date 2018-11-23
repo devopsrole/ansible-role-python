@@ -6,3 +6,4 @@
  - include: install.yml
   become: true
   become_user: root
+  when: pyfsrc_force_install or cmd_result.rc != 0
