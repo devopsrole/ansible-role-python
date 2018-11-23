@@ -1,7 +1,7 @@
 ---
 # defaults file for python-from-src
 
-pyfsrc_version: ~
+pyfsrc_version: 2.7.10
 
 pyfsrc_download_pkg_name: "Python-{{ pyfsrc_version }}"
 
