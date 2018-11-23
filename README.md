@@ -54,4 +54,4 @@ MIT
 Author Information
 ------------------
 
-Vineet Naik <naikvin@gmail.com>
+Akhil Jalagam
