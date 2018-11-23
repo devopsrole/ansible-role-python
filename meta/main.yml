@@ -1,14 +1,14 @@
 ---
 galaxy_info:
-  author: Vineet Naik
+  author: Akhil Jalagam
   description: For installing a specific Python version from source
   license: MIT
   min_ansible_version: 1.2
   platforms:
-    - name: GenericLinux
+    - name: EL
       versions:
-        - all
-        - any
+        - 6
+        - 7
   categories:
   - development
 dependencies: []
