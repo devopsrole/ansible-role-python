@@ -34,5 +34,3 @@
     - wget
     - vim
     - mlocate
-    - python-setuptools
-
