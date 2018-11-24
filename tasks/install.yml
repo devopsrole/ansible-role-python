@@ -25,14 +25,14 @@
   args:
     chdir: "{{ pyfsrc_src_dir_path }}"
   when: pyfsrc_make_default
-  sudo: yes
+  become: true
 
 - name: Run make altinstall
   command: make altinstall
   args:
     chdir: "{{ pyfsrc_src_dir_path }}"
   when: not pyfsrc_make_default
-  sudo: yes
+  become: true
 
 - name: Install pip using easy_install
   easy_install:
