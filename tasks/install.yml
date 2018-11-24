@@ -34,6 +34,11 @@
   when: not pyfsrc_make_default
   sudo: yes
 
+- name: Install pip using easy_install
+  easy_install:
+    name: pip
+    state: present
+
 - name: Clean up the source files
   command: rm -r "{{ item }}"
   with_items:
