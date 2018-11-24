@@ -34,11 +34,6 @@
   when: not pyfsrc_make_default
   become: true
 
-- name: Install pip using easy_install
-  easy_install:
-    name: pip
-    state: present
-
 - name: Clean up the source files
   command: rm -r "{{ item }}"
   with_items:
