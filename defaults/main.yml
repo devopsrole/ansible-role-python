@@ -23,4 +23,4 @@ pyfsrc_cleanup_downloads: no
 
 # If true, the python source for the version will be downloaded and
 # installed again even if it's found on the system.
-pyfsrc_force_install: no
+pyfsrc_force_install: yes
